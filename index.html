@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animales amenazados en Punilla</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="hero">
@@ -30,29 +31,42 @@
     <section class="tarjetas">
       <article class="card">
         <h3>Cóndor andino</h3>
-        <p>
-          Es una de las aves más emblemáticas de Córdoba. Necesita grandes áreas naturales
-          y ambientes bien conservados para sobrevivir.
+        <p> Es una de las aves más emblemáticas de Córdoba. Necesita grandes áreas naturales y ambientes bien conservados para sobrevivir.
         </p>
       </article>
-
       <article class="card">
         <h3>Loro hablador</h3>
-        <p>
-          Es una especie muy llamativa y sensible a la pérdida de hábitat y al tráfico de fauna.
-          Su conservación depende de proteger los ambientes nativos.
+        <p>Es una especie muy llamativa y sensible a la pérdida de hábitat y al tráfico de fauna. Su conservación depende de proteger los ambientes nativos.
         </p>
       </article>
-
-      <article class="card">
+       <article class="card">
         <h3>Puma</h3>
-        <p>
-          Aunque todavía habita sectores serranos, sufre la fragmentación del ambiente
-          y los conflictos con actividades humanas.
-        </p>
+        <p>Aunque todavía habita sectores serranos, sufre la fragmentación del ambiente y los conflictos con actividades humanas.</p>
       </article>
     </section>
 
+     <section class="animales">
+      <h2>Buscador de animales amenazados</h2>
+      <p>Escribí el nombre de un animal para filtrar la lista.</p>
+    
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Escribí el nombre de un animal"
+      />
+
+       <div id="animales-lista" class="botones-animales">
+        <button data-animal="Cóndor andino">Cóndor andino</button>
+        <button data-animal="Loro hablador">Loro hablador</button>
+        <button data-animal="Puma">Puma</button>
+        <button data-animal="Zorro gris">Zorro gris</button>
+        <button data-animal="Corzuela parda">Corzuela parda</button>
+        <button data-animal="Aguará guazú">Aguará guazú</button>
+        <button data-animal="Peludo">Peludo</button>
+        <button data-animal="Gato montés">Gato montés</button>
+      </div>
+    </section>    
+    
     <section class="amenazas">
       <h2>Principales amenazas</h2>
       <ul>
@@ -63,7 +77,7 @@
         <li>Contaminación y alteración de cursos de agua</li>
       </ul>
     </section>
-
+    
     <section class="accion">
       <h2>¿Qué podemos hacer?</h2>
       <p>

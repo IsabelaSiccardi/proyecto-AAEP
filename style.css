@@ -1,40 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f7f1;
   color: #243024;
-  line-height: 1.6;
+  margin: 0;
 }
 
 .hero {
-  background: linear-gradient(rgba(20, 40, 20, 0.6), rgba(20, 40, 20, 0.6)),
-              url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80");
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.overlay {
+  background-color: #2f5d3a;
   color: white;
-  padding: 20px;
-}
-
-.overlay h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.overlay p {
-  font-size: 1.1rem;
+  text-align: center;
+  padding: 40px;
 }
 
 .contenedor {
@@ -49,32 +24,32 @@ section {
 
 h2 {
   color: #2f5d3a;
-  margin-bottom: 12px;
-}
-
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .card {
-  flex: 1 1 250px;
   background-color: white;
   border: 1px solid #d8e2d2;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
 }
 
-.card h3 {
-  color: #3c6e47;
-  margin-bottom: 10px;
+#search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 14px 0 20px;
+  border: 1px solid #b6c9ae;
 }
 
-.amenazas ul {
-  list-style: square;
-  padding-left: 20px;
+.botones-animales button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #3c6e47;
+  color: #2f5d3a;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 4px;
 }
 
 footer {
@@ -82,5 +57,4 @@ footer {
   background-color: #2f5d3a;
   color: white;
   padding: 15px;
-  margin-top: 30px;
 }
